@@ -33,7 +33,7 @@ function App() {
             <div className="flex flex-col items-center -mt-16">
               <div className="bg-white p-2 rounded-2xl shadow-xl">
                 <img
-                  src="/screenshot_2026-01-27_180249.png"
+                  src="/logo.png"
                   alt="MenuThere Logo"
                   className="w-32 h-32 rounded-xl"
                 />
