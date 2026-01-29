@@ -1,10 +1,10 @@
-import { Instagram, Twitter, Mail, Phone, Globe, Linkedin, Youtube } from 'lucide-react';
-
+import { Instagram, Twitter, Mail, Phone, Globe, Linkedin } from 'lucide-react';
+import Tiktok from './TiktokIcon';
 function App() {
   const socialLinks = [
     { icon: Instagram, url: 'https://instagram.com/menu.there' },
     { icon: Twitter, url: 'https://x.com/menuthere' },
-    { icon: Youtube, url: 'https://www.tiktok.com/@menuthere' },
+    { icon: Tiktok, url: 'https://www.tiktok.com/@menuthere' },
     { icon: Mail, url: 'mailto:menuthere@gmail.com' },
     { icon: Phone, url: 'https://wa.me/917012944024' },
     { icon: Globe, url: 'https://www.menuthere.com/' },
@@ -14,13 +14,6 @@ function App() {
   const founders = [
     { name: 'Thrisha K', url: 'https://www.linkedin.com/in/thrishakannan/' },
     { name: 'Muhammed Rinshad', url: 'https://www.linkedin.com/in/muhammedrinshad/' }
-  ];
-
-  const features = [
-    'Instant Menu Updates',
-    'Item Availability Control',
-    'Offers & Promotions',
-    'Brand Customization'
   ];
 
   return (
@@ -42,7 +35,7 @@ function App() {
               <h1 className="mt-6 text-4xl font-bold text-gray-800">MenuThere</h1>
               <p className="mt-2 text-xl text-orange-600 font-semibold">Change prices, not menus</p>
 
-              <div className="mt-6 flex gap-4 justify-center">
+              <div className="mt-6 flex gap-4 justify-center flex-wrap">
                 {socialLinks.map((link, index) => (
                   <a
                     key={index}
